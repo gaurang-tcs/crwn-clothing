@@ -16,7 +16,6 @@ export function* fetchCollectionsAsync() {
         yield put(fetchCollectionsFailure(error.message))
     }
 }
-
 export function* fetchCollectionsStart() {
     yield takeLatest(
         ShopActionTypes.FETCH_COLLECTIONS_START,
